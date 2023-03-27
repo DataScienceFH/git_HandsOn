@@ -17,11 +17,12 @@ if set(seq) - set('ACGT'):
     print("Invalid DNA sequence entered")
     sys.exit(1)
 
-# Initialize counters for each nucleotide
+# Initialize counters for each nucleotide and total sequence length
 a_count = 0
 c_count = 0
 g_count = 0
 t_count = 0
+seq_length = len(seq)
 
 # Iterate through the sequence and count each nucleotide
 for nucleotide in seq:
@@ -34,12 +35,11 @@ for nucleotide in seq:
     elif nucleotide == 'T':
         t_count += 1
 
-# Calculate the total count and percentage of each nucleotide
-total_count = a_count + c_count + g_count + t_count
-a_percent = a_count / total_count * 100
-c_percent = c_count / total_count * 100
-g_percent = g_count / total_count * 100
-t_percent = t_count / total_count * 100
+# Calculate the percentage of each nucleotide
+a_percent = a_count / seq_length * 100
+c_percent = c_count / seq_length * 100
+g_percent = g_count / seq_length * 100
+t_percent = t_count / seq_length * 100
 
 # Print the results
 print(f"Sequence: {seq}")
@@ -51,3 +51,4 @@ print(f"A percentage: {a_percent:.2f}%")
 print(f"C percentage: {c_percent:.2f}%")
 print(f"G percentage: {g_percent:.2f}%")
 print(f"T percentage: {t_percent:.2f}%")
+print(f"Sequence length: {seq_length}")
