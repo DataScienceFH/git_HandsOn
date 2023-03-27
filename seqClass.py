@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# This is a simple Python script to differentiate between DNA and RNA sequences.
+
 import sys, re
 from argparse import ArgumentParser
 
@@ -31,3 +33,5 @@ if args.motif:
         print("FOUND")
     else:
         print("NOT FOUND")
+		
+# Here the script finishes.
