@@ -51,3 +51,5 @@ print(f"A percentage: {a_percent:.2f}%")
 print(f"C percentage: {c_percent:.2f}%")
 print(f"G percentage: {g_percent:.2f}%")
 print(f"T percentage: {t_percent:.2f}%")
+
+# Checked the final version of the script
