@@ -20,7 +20,7 @@ if len(sys.argv) == 1:
 args = parser.parse_args()
 args.seq = args.seq.upper()
 
-# Just checked again, that the script works fine. No further changes have to be made, to distinguish DNA and RNA for now.
+# Just checked again, that the script works fine. No further changes have to be made, to distinguish DNA and RNA for 
 # Check sequence identity
 if re.search('^[ACGTU]+$', args.seq):
     if re.search('T', args.seq):
