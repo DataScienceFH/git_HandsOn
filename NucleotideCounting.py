@@ -12,6 +12,11 @@ if len(sys.argv) == 1:
 # Get the sequence from the command line argument and convert to uppercase
 seq = sys.argv[1].upper()
 
+# Check if the sequence is a valid DNA sequence
+if set(seq) - set('ACGT'):
+    print("Invalid DNA sequence entered")
+    sys.exit(1)
+
 # Initialize counters for each nucleotide
 a_count = 0
 c_count = 0
